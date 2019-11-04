@@ -19,7 +19,7 @@ class Signup extends Component {
     };
   }
 
-  clearForm = () =>
+  clearState = () =>
     this.setState({
       displayName: "",
       email: "",
@@ -43,7 +43,7 @@ class Signup extends Component {
       );
       await createUserProfileDocument(user, { displayName });
 
-      this.clearForm();
+      this.clearState();
     } catch (error) {
       console.log(error);
     }
