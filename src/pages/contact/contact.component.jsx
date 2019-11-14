@@ -1,13 +1,11 @@
-import React from 'react';
+import React from "react";
 
-
-import './contact.styles.scss'
+import { ContactContainer } from "./contact.styles";
 
 const Contact = () => (
-  <div className="contact">
+  <ContactContainer>
     <h1>Contact us at crownclothing_support@gmail.com</h1>
-    
-  </div>
-)
+  </ContactContainer>
+);
 
 export default Contact;
